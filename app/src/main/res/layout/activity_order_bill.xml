@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderBill">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/app_bar_layout"
+                android:id="@+id/bill_app_bar"/>
+
+            <TextView
+                android:id="@+id/bill_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rate"
+                android:layout_marginTop="320dp"
+                android:layout_marginStart="5dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/bill_rate_ans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="320dp"
+                android:layout_marginStart="180dp"
+                android:textColor="#000000"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/bill_tax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tax"
+                android:layout_marginTop="350dp"
+                android:layout_marginStart="5dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/bill_tax_ans_sgst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="350dp"
+                android:layout_marginStart="180dp"
+                android:textColor="#000000"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/bill_tax_ans_cgst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="380dp"
+                android:layout_marginStart="180dp"
+                android:textColor="#000000"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/bill_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discount"
+                android:layout_marginTop="410dp"
+                android:layout_marginStart="5dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/bill_discount_ans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="410dp"
+                android:layout_marginStart="180dp"
+                android:textColor="#000000"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/bill_grand_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grand Total"
+                android:layout_marginTop="440dp"
+                android:layout_marginStart="5dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/bill_grand_total_ans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="440dp"
+                android:layout_marginStart="180dp"
+                android:textColor="#000000"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/bill_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Time"
+                android:layout_marginTop="470dp"
+                android:layout_marginStart="5dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/bill_start_time_ans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_marginTop="470dp"
+                android:layout_marginStart="180dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/bill_end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End Time"
+                android:layout_marginTop="500dp"
+                android:layout_marginStart="5dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/bill_end_time_ans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_marginTop="500dp"
+                android:layout_marginStart="180dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/bill_total_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Time"
+                android:layout_marginTop="530dp"
+                android:layout_marginStart="5dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/bill_total_time_ans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_marginTop="530dp"
+                android:layout_marginStart="180dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/bill_payment_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Status"
+                android:layout_marginTop="570dp"
+                android:layout_marginStart="5dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/bill_payment_status_ans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#DD2C00"
+                android:layout_marginTop="570dp"
+                android:layout_marginStart="180dp"
+                android:textSize="16sp"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"
+                android:layout_marginTop="600dp"/>
+
+            <TextView
+                android:id="@+id/bill_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Details"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginTop="610dp"
+                android:layout_marginStart="5dp"
+                android:textSize="20sp"/>
+
+
+            <TextView
+                android:id="@+id/bill_services_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Services required for?"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginTop="650dp"
+                android:layout_marginStart="5dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/bill_services_ans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Services Answer"
+                android:layout_marginTop="675dp"
+                android:layout_marginStart="5dp"
+                android:textSize="16sp"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"
+                android:layout_marginTop="705dp"/>
+
+            <TextView
+                android:id="@+id/bill_services_loc_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Where do you require the service?"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginTop="715dp"
+                android:layout_marginStart="5dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/bill_services_loc_ans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Services Location Answer"
+                android:layout_marginTop="740dp"
+                android:layout_marginStart="5dp"
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/bill_cancel_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="780dp"
+                android:background="#E65100"
+                android:padding="10dp"
+                android:text="Cancel Booking"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="111dp"
+                app:srcCompat="@drawable/rectangle_shape" />
+
+            <TextView
+                android:id="@+id/bill_day_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="115dp"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/bill_job_assignment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="235dp"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/bill_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="145dp"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/bill_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="115dp"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/bill_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="56dp"
+                android:background="#42A5F5"
+                android:padding="16dp"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                tools:ignore="RtlSymmetry" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/bill_img"
+                android:src="@drawable/user_image"
+                android:layout_marginTop="235dp"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"
+                android:layout_marginTop="295dp"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

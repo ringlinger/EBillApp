@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "714142668059",
+    "firebase_url": "https://ebillapp-f92be.firebaseio.com",
+    "project_id": "ebillapp-f92be",
+    "storage_bucket": "ebillapp-f92be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:714142668059:android:9000c4d972351d0b",
+        "android_client_info": {
+          "package_name": "com.trips.ebillapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "714142668059-qsr0c76lj28ph1j117pgjhugb3vcbqvl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAliSbokL3wj_wZP5V6dOebJC8yStGnh7Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
